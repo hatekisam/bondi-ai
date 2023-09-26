@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+font-lato {
+        font-family: 'Lato', sans-serif;
+}
+
+font-pop {
+        font-family: 'Poppins', sans-serif;
+}
+
+
+@keyframes quiet {
+        25% {
+                transform: scaleY(.6);
+        }
+
+        50% {
+                transform: scaleY(.4);
+        }
+
+        75% {
+                transform: scaleY(.8);
+        }
+}
+
+@keyframes normal {
+        25% {
+                transform: scaleY(1);
+        }
+
+        50% {
+                transform: scaleY(.4);
+        }
+
+        75% {
+                transform: scaleY(.6);
+        }
+}
+
+@keyframes loud {
+        25% {
+                transform: scaleY(1);
+        }
+
+        50% {
+                transform: scaleY(.4);
+        }
+
+        75% {
+                transform: scaleY(1.2);
+        }
+}
+
+body {
+        display: flex;
+        justify-content: center;
+        background: black;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        height: 100vh;
+}
+
+.boxContainer {
+        display: flex;
+        justify-content: space-between;
+        height: 64px;
+        --boxSize: 4px;
+        --gutter: 40px;
+        width: calc((var(--boxSize) + var(--gutter)) * 5);
+}
+
+.box {
+        transform: scaleY(.4);
+        height: 100%;
+        width: var(--boxSize);
+        background: #108A00;
+        animation-duration: 1.2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        border-radius: 8px;
+}
+
+.box1 {
+        animation-name: quiet;
+}
+
+.box2 {
+        animation-name: normal;
+}
+
+.box3 {
+        animation-name: quiet;
+}
+
+.box4 {
+        animation-name: loud;
+}
+
+.box5 {
+        animation-name: quiet;
+}
+
+.box6 {
+        animation-name: normal;
+}
+
+.box7 {
+        animation-name: quiet;
+}
+
+.box8 {
+        animation-name: loud;
+}
+
+.box9 {
+        animation-name: quiet;
+}
+
+.box10 {
+        animation-name: normal;
+}
+
+.box11 {
+        animation-name: quiet;
+}
+
+.box12 {
+        animation-name: loud;
+}
+
+.box13 {
+        animation-name: quiet;
+}
+.box14 {
+        animation-name: loud;
+}
+
+.box15 {
+        animation-name: quiet;
+}
+.box16 {
+        animation-name: loud;
+}
+
+.box17 {
+        animation-name: quiet;
+}
+.box18 {
+        animation-name: loud;
+}
+
+.box19 {
+        animation-name: quiet;
+}
+
